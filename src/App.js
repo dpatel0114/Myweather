@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import WeekContainer from './Components/WeekContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
