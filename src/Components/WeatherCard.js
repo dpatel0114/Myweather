@@ -4,16 +4,19 @@ class WeatherCard extends Component {
     render() {
         return (
         <div>
-            <div class="container">
-                <h5 className="display-3 jumbotron"> Forcast For Day </h5>
+            <div class="container align-center">
+                {/* <h5 className="display-3 jumbotron"> Forcast For Day </h5> */}
                 <h5 className="display-5 text-muted"> {this.props.info.name}, {this.props.info.country} </h5>
+                <h5 className="date" > Today </h5>
                 </div>
-            <div class="card bg-light mb-3 center" style={{width: 200, align: 'center', margin: 100, backgroundcolor: 'gray'}}>
+            <div class="row justify-content-md-center">
+            <div class="card bg-light mb-1" style={{width: 280, height: 200, margin: 100, backgroundcolor: 'gray'}}>
                 <div class="card-header"> {this.props.info.name}, {this.props.info.country}</div>
             <div class="card-body">
               {/* <h5 class="card-title"> city: {this.props.info.name}</h5> */}
               <h5 class="card-content"> {Math.round(this.props.info.temp)}°F</h5>
               <p class="card-text"> {this.props.info.description}</p>
+            </div>
             </div>
             </div>
         </div>

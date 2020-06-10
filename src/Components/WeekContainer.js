@@ -45,8 +45,9 @@ class WeekContainer extends Component {
     render() {
         return (
             <div>
-                <div class="md-form active-cyan-2 mb-3">
-                    <input class="search-bar" type="text" placeholder="Search.." aria-label="Search" style={{margin:'20px'}}/> 
+                <div class="md-form active-cyan-2 mb-8 shadow-sm p-3 mb-5 bg-white rounded">
+               
+                    <input class="search" type="text" placeholder="Search.." aria-label="Search" style={{marginbottom:'20px', margintop: '-25px', align: 'center'}}/> 
                     <button class="submit" onClick={this.handleClick}> Enter</button>   
                 </div>
                 <div>
